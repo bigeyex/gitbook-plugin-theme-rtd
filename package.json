@@ -1,0 +1,74 @@
+{
+  "name": "gitbook-plugin-theme-rtd",
+  "description": "A port of Read the Docs theme for GitBook",
+  "main": "./index.js",
+  "version": "0.1.0",
+  "engines": {
+    "gitbook": ">=3.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bigeyex/gitbook-plugin-theme-rtd.git"
+  },
+  "author": "Bigeyex <bigeyex@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bigeyex/gitbook-plugin-theme-rtd/issues"
+  },
+  "contributors": [
+    {
+      "name": "bigeyex",
+      "email": "bigeyex@gmail.com"
+    },
+    {
+      "name": "readthedocs.org",
+      "email": "dev@readthedocs.org"
+    },
+    {
+      "name": "Samy Pessé",
+      "email": "samy@gitbook.com"
+    }
+  ],
+  "gitbook": {
+    "properties": {
+      "styles": {
+        "type": "object",
+        "title": "Custom Stylesheets",
+        "properties": {
+          "website": {
+            "title": "Stylesheet for website output",
+            "default": "styles/website.css"
+          },
+          "pdf": {
+            "title": "Stylesheet for PDF output",
+            "default": "styles/pdf.css"
+          },
+          "epub": {
+            "title": "Stylesheet for ePub output",
+            "default": "styles/epub.css"
+          },
+          "mobi": {
+            "title": "Stylesheet for Mobi output",
+            "default": "styles/mobi.css"
+          },
+          "ebook": {
+            "title": "Stylesheet for ebook outputs (PDF, ePub, Mobi)",
+            "default": "styles/ebook.css"
+          },
+          "print": {
+            "title": "Stylesheet to replace default ebook css",
+            "default": "styles/print.css"
+          }
+        }
+      },
+      "showLevel": {
+        "type": "boolean",
+        "title": "Show level indicator in TOC",
+        "default": false
+      }
+    }
+  }
+}
