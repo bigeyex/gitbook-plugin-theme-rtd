@@ -9,13 +9,15 @@ It is still working in progress.
 And this is a "fork" of base theme instead of an extension. That means,  
 some other Gitbook plugins may not work. 
 
+Screenshot:
+
+![Screenshot of this theme](readme-snapshot.png)
+
 ## Features
 
 - A neat sidebar, including the SUMMARY and table of contents of the current page.
 
 TODO:
-- [] add language switcher to the top of the page
-- [] add more block markups (e.g. info....)
 - [] fix h2 titles
 
 ## Install
@@ -28,4 +30,28 @@ TODO:
 
 then `gitbook install`.
 
+## Additional Markups
 
+You may create Tip/Warning boxes use these markups:
+
+```
+{% note %}
+This is a notice
+{% endnote %}
+
+{% tip %}
+This is a generous tip
+{% endtip %}
+
+{% warning %}
+This is a Warning
+{% endwarning %}
+
+{% warning "Attention" %}
+(Change the title if you wish)
+{% endwarning %}
+
+{% danger %}
+This might be dangerous
+{% enddanger %}
+```

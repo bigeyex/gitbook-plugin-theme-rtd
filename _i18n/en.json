@@ -18,5 +18,7 @@
     "FONTSETTINGS_SEPIA": "Sepia",
     "FONTSETTINGS_NIGHT": "Night",
     "FONTSETTINGS_SANS": "Sans",
-    "FONTSETTINGS_SERIF": "Serif"
+    "FONTSETTINGS_SERIF": "Serif",
+    "PREVIOUS": "Previous",
+    "NEXT": "Next"
 }
