@@ -17,6 +17,7 @@
 {% block javascript %}
     <script src="{{ "gitbook.js"|resolveAsset }}"></script>
     <script src="{{ "theme-default.js"|resolveAsset }}"></script>
+    <script src="{{ "theme.js"|resolveAsset }}"></script>
     {% for resource in plugins.resources.js %}
         {% if resource.url %}
         <script src="{{ resource.url }}"></script>
@@ -47,16 +48,18 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
         <nav class="wy-nav-top" aria-label="top navigation">
-        {% block mobile_nav %}
-            <!-- <i data-toggle="wy-nav-top" class="fa fa-bars"></i> -->
-            {% include "website/header.html" %}
-        {% endblock %}
+            <i data-toggle="wy-nav-top" class="fa fa-bars shift-menu"></i>
+            <a href="#">{{ page.title }}</a>
+            {% block mobile_nav %}
+                <!-- <i data-toggle="wy-nav-top" class="fa fa-bars"></i> -->
+            {% endblock %}
         </nav>
         <div class="wy-nav-content">
             {% block book_body %}
                 <div class="rst-content">
+                    {% include "website/header.html" %}
+
                     {% block book_inner %}
-                        
                     <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
                         {% block search_results %}
                             <div itemprop="articleBody">

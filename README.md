@@ -14,10 +14,9 @@ some other Gitbook plugins may not work.
 - A neat sidebar, including the SUMMARY and table of contents of the current page.
 
 TODO:
-- [] fix h2 titles
-- [] fix mobile version
 - [] add language switcher to the top of the page
 - [] add more block markups (e.g. info....)
+- [] fix h2 titles
 
 ## Install
 
