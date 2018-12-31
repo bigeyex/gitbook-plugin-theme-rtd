@@ -63,9 +63,11 @@
                     <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
                         {% block search_results %}
                             <div itemprop="articleBody">
+                                <div class="section"> <!-- rtd needs a section to handle css properly -->
                                 {% block page %}
                                 {{ page.content|safe }}
                                 {% endblock %}
+                                </div>
                             </div>
                         {% endblock %}
                     </div>
