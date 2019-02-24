@@ -17,8 +17,6 @@ Screenshot:
 
 - A neat sidebar, including the SUMMARY and table of contents of the current page.
 
-TODO:
-- [] fix h2 titles
 
 ## Install
 
