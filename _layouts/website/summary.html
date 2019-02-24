@@ -18,11 +18,13 @@
                 {{ articles(article.articles, file, config) }}
             </ul>
             {% elif page.level==article.level %}
-                {% set h2s = page.content.match(r/<h2 id="[^"]+/g) %}
+                {% set h2s = page.content.match(r/<h2[^>]*>[^<]*<\/h2>/g) %}
                 {% if h2s.length > 0 %}
                 <ul>
                     {% for h2_item in h2s %}
-                    <li class="toctree-l{{menu_level+1}}"><a class="reference internal" href="{{h2_item|replace('<h2 id="', '#')}}">{{h2_item|replace('<h2 id="', '')}}</a></li>
+                    {% set h2_id = h2_item.replace('<h2 id="', '#').replace(r/".*/, '') %}
+                    {% set h2_content = h2_item.replace(r/<[^>]+>/g, '') %}
+                    <li class="toctree-l{{menu_level+1}}"><a class="reference internal" href="{{h2_id}}">{{h2_content}}</a></li>
                     {% endfor %}
                 </ul>
                 {% endif %}
