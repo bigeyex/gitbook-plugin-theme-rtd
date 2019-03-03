@@ -2,7 +2,7 @@
   "name": "gitbook-plugin-theme-rtd",
   "description": "A port of Read the Docs theme for GitBook",
   "main": "./index.js",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "engines": {
     "gitbook": ">=3.0.0"
   },
